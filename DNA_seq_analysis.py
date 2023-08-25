@@ -85,15 +85,15 @@ def generetesORF(seq):
 def proteinsfromORF(aa_seq):
      current_prot = []
      proteins = []
-          ## якщо є стоп кодон, тоді нічого не роби
+          ## if there is a stop code, then do nothing
      for aa in aa_seq:
         if aa == "*":
-            ## якщо стоп кодон, тоді все що є in current_proteins add to protein 
+            ## if stop codon, then everything in current_proteins add to protein 
             if current_prot:
                 for p in current_prot:
                     proteins.append(p)
                 current_prot = []
-     ## якщо є старт кодон, тоді почни брати і робити білок
+     ## if there is a start codon, then start making protein
         else:     
             if aa == "L" or aa == "I" or aa == "M" or aa == "V":
               current_prot.append("")
