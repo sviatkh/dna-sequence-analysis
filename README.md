@@ -4,4 +4,4 @@ DNA analysis using Biopython and own functions
 
 Project Idea: Write a script using BioPython to fetch DNA sequences from a given database and perform basic sequence analysis, such as calculating GC content and identifying open reading frames.
 
-code in Bio.Project.py
+code in DNA_seq_analysis.py
